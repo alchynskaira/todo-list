@@ -42,8 +42,8 @@ const App = ()=>{
 
 
     return (
-      <>
-
+      <div className="container">
+       <h1 className="title">TODO LIST</h1>
                       <TodoEditor
                             onSubmit={addTodo}
                        />
@@ -53,7 +53,7 @@ const App = ()=>{
                             onToggleCompleted={toggleCompleted}
                        />
 
-            </>
+            </div>
     );
 }
 
