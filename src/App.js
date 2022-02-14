@@ -33,11 +33,11 @@ const App = ()=>{
     };
 
     const toggleCompleted = todoId => {
-        setTodos([
-            ...todos.map((todo) =>
-                todo.id === todoId ? { ...todo, complete: !todo.complete } : {...todo }
-            )
-        ])
+        const toggle = todos.map((todo) =>
+            todo.id === todoId ? { ...todos, isCompleted: !todo.isCompleted } : {...todos })
+
+        setTodos(toggle)
+
     }
 
 
